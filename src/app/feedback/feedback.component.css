@@ -1,0 +1,153 @@
+
+
+
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1.5em;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin-top: -30%;
+}
+
+.main-agileinfo {
+  background: #fcfbfb46;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+}
+
+.agileits-top {
+  padding: 1em;
+}
+
+
+.text {
+  width: 100%;
+  padding: 0.8em;
+  margin: 1em 0;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 0.9em;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.text:focus {
+  border-color: #00b7ff;
+}
+
+textarea.text {
+  min-height: 100px;
+  resize: vertical;
+}
+
+
+.file-input {
+  margin: 1em 0;
+}
+
+.file-input label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #ff0b0b;
+}
+
+
+.wthree-text {
+  margin: 1.5em 0;
+}
+
+.checkbox {
+  margin-right: 0.5em;
+}
+
+.wthree-text label {
+  color: #fd0000;
+  cursor: pointer;
+}
+
+
+button[type="submit"] {
+  background-color: #0011ff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px #3498db33;
+}
+
+
+button[type="submit"]:hover {
+  background-color: #000f61;
+  box-shadow: 0 4px 8px #000000f1;
+  transform: translateY(-1px);
+}
+
+
+btn[type="submit"]:active {
+  background-color: #2472a4;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px #2980b933;
+}
+
+
+btn[type="submit"]:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+
+button[type="submit"]:not(:disabled):hover {
+  box-shadow: 0 4px 15px #3498db66;
+}
+
+
+.colorlibcopy-agile {
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em;
+  color: #0f0000;
+}
+
+.colorlibcopy-agile a {
+  color: #1100ff;
+  text-decoration: none;
+}
+
+.colorlibcopy-agile a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .main-w3layouts {
+      padding: 2em 0;
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  .main-agileinfo {
+      padding: 1em;
+  }
+}

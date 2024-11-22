@@ -1,0 +1,58 @@
+<div class="main-w3layouts wrapper">
+  <h1>What is your comment?</h1>
+
+  <div class="main-agileinfo">
+    <div class="agileits-top">
+        <form (ngSubmit)="addFeedback()" #addFeedbackForm="ngForm">
+        <input
+          class="text"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          [(ngModel)]="feedback.name"
+        />
+
+        <input
+          class="text email"
+          type="text"
+          name="email"
+          placeholder="Email"
+          required
+          [(ngModel)]="feedback.email"
+        />
+
+        <textarea
+          class="text"
+          name="details"
+          placeholder="Details"
+          required
+          [(ngModel)]="feedback.details"
+        ></textarea>
+
+        <div class="wthree-text">
+          <label class="anim">
+            <input type="checkbox" class="checkbox" required />
+            <span>I Agree to the Terms & Conditions</span>
+          </label>
+          <div class="clear"></div>
+        </div>
+<div class="btn">
+<button type="submit" [disabled]="addFeedbackForm.invalid">ADD ITEM</button>
+
+</div>
+      </form>
+    </div>
+  </div>
+
+  <div class="colorlibcopy-agile">
+    <p>
+      © 2024 MACAMI IMPRESS | Design by
+
+      <a href="http://t.me/MACAMI_1X1080SP991" target="_blank">nashnix</a>
+    </p>
+
+
+  </div>
+
+</div>

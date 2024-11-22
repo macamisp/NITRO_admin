@@ -1,0 +1,29 @@
+<div *ngIf="isLoading">Loading...</div>
+<div *ngIf="error" class="error">{{error}}</div>
+
+<div class="section_our_solution" *ngIf="!isLoading && !error">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="our_solution_category">
+        <div class="solution_cards_box">
+          <div class="solution_card" *ngFor="let newsItem of news">
+            <div class="hover_color_bubble"></div>
+            <div class="so_top_icon">
+              <img src="/assets/blu logo.png" alt="Logo">
+            </div>
+            <div class="solu_title">
+              <h2>{{ newsItem.heading }}</h2>
+            </div>
+            <div class="solu_description">
+              <p>{{ newsItem.content }}</p>
+              <a href="https://www.newsfirst.lk/tag/gas" target="_blank" rel="noopener noreferrer">
+                <button type="button" class="read_more_btn">Read More</button>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
